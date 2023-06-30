@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+h1 {
+    font-family: 'Caprasimo', cursive;
+    font-size: 80px;
+}
+
+
+.header-section {
+    background-color: FFFDE3;
+    text-align: center;
+
+}
+
