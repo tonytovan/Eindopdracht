@@ -1,14 +1,232 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;500;600;700;800;900&display=swap');
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --offwhite:#FFFDE3;
+    --darkred:#C21010;
+    --red:#E64848;
+    --green:#CFE8A9;
+}
+
+body {
+    font-family: 'Aleo', serif;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
 
 h1 {
     font-family: 'Caprasimo', cursive;
-    font-size: 80px;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    text-transform: uppercase;
 }
 
 
-.header-section {
-    background-color: FFFDE3;
+/* --------------- 3.1 Reusables ----------------------- */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.default-text {
+    max-width: 850px;
     text-align: center;
+    text-transform: uppercase;
 
 }
 
+.default-area-padding {
+    padding: 100px 0;
+}
+
+/* --------------- 4.1 Header ------------------------- */
+header {
+    background: rgb(255,253,227);
+    background: linear-gradient(180deg, rgba(255,253,227,1) 59%, rgba(207,232,169,1) 90%);
+    flex-shrink: 1;
+}
+
+.outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*border: 2px solid blue;*/
+}
+
+.inner-container {
+    flex-basis: 450px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /*border: 2px dashed black;*/
+    height: 600px;
+    font-size: 18px;
+}
+
+.inner-container img {
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+/* --------------- 4.2 Introduction ------------------- */
+
+/* --------------- 4.3 Main ------------------- */
+
+main {
+    flex: 1 0 auto;
+    background: var(--green);
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    /*border: 2px solid orange;*/
+}
+
+.main-content {
+    /*border: 2px dashed purple;*/
+    flex-basis: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+}
+
+.picture-main-fridge {
+    flex-basis: 170px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.picture-main-fridge img {
+    width: 100%;
+
+}
+
+.picture-main-hotpan {
+    flex-basis: 120px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.picture-main-hotpan img {
+    width: 100%;
+    /*mix-blend-mode: multiply;*/
+}
+
+.inner-article-main {
+    flex-basis: 380px;
+    height: 200px;
+    background-color: var(--offwhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify-all;
+    border-radius: 30px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* --------------- 4.6 Footer ------------------- */
+footer {
+    width: 100%;
+    background-color: var(--darkred);
+    /*color: white;*/
+    height: 200px;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.logo-footer img {
+    width: 100%;
+}
+
+.outer-footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: white;*/
+    /*border: solid;*/
+    height: 120px;
+}
+
+
+.logo-footer {
+    flex-basis: 60px;
+    /*border: #282c34;*/
+    /*border: solid;*/
+    margin-left: 55px;
+}
+
+.ul-container {
+    /*border: white;*/
+    /*border: solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 80px;
+    flex-basis: 100px;
+    margin-right: 35px;
+
+}
+
+.copyright-container {
+    color: white;
+    /*border: white;*/
+    /*border: solid;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    font-family: Inter, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.outer-border-container {
+    /*border: dashed;*/
+    display: flex;
+    flex-direction: row;
+    margin: 25px 55px 25px 55px;
+    flex-basis: 100vw;
+
+}
+
+.border-container {
+    border: 2px solid var(--green);
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100vw;
+    background-color: var(--green);
+}

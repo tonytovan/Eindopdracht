@@ -1,0 +1,43 @@
+:root {
+    --offwhite:#FFFDE3;
+    --darkred:#C21010;
+    --red:#E64848;
+    --green:#CFE8A9;
+}
+
+.logo-container {
+    display: flex;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+nav {
+    background-color: var(--red);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 250px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+

@@ -1,0 +1,57 @@
+/*h1 {*/
+/*    font-family: Inter;*/
+/*}*/
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.login-header-outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 300px;
+
+}
+
+.login-header-inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    flex-basis: 700px;
+    border: 2px dashed black;
+    flex-shrink: 0;
+}
+
+.login-main-outer-container {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 800px;
+}
+
+.login-main-inner-container {
+    border: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 20px 0;
+
+    background-color: var(--offwhite);
+    border-radius: 35px;
+}
+
+h3 {
+    font-size: 25px;
+}
