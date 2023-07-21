@@ -15,15 +15,12 @@ function Search() {
     const { register, handleSubmit } = useForm();
     const [recipes, setRecipes] = useState([]);
 
-    const YOUR_APP_ID = "ab28943c";
-    const YOUR_APP_KEY = "ef50f04b0bb26f97510970bdb7aa00aa";
-
     useEffect(() => {
         const controller = new AbortController();
         async function fetchData() {
 
             try {
-                const result = await axios.get(`https://api.edamam.com/api/recipes/v2?type=any&q=${formState.query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&health=${formState.healthLabels}&cuisineType=${formState.cuisineType}&mealType=${formState.mealType}&excluded=${formState.excluded}`);
+                const result = await axios.get(`https://api.edamam.com/api/recipes/v2?type=any&q=${formState.query}&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}&health=${formState.healthLabels}&cuisineType=${formState.cuisineType}&mealType=${formState.mealType}&excluded=${formState.excluded}`);
                 console.log(result.data);
                 setRecipes(result.data.hits)
                 setFormState(result.data.hits);
