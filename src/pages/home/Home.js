@@ -16,7 +16,7 @@ function Home() {
                     <span className="logo-header">
                     <img src={LilChef} alt="logo_lilchef"/>
                     </span>
-                    <h2>Your kitchen buddy!</h2>
+                    <h2>Your kitchen buddy!!</h2>
             </div>
         </header>
         <main>
