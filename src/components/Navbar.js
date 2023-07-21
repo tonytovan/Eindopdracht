@@ -17,7 +17,7 @@ function Navbar() {
             </div>
             <ul>
                 <li>
-                    <NavLink to="/">Register</NavLink>
+                    <NavLink to="/register">Register</NavLink>
                 </li>
                 <li>
                     <NavLink to="/login">Login</NavLink>
@@ -25,7 +25,7 @@ function Navbar() {
             </ul>
 
                 {/*<div className="button-container">*/}
-                {/*    <button type="button" onClick={() => navigate("/")}>Register</button>*/}
+                {/*    <button type="button" onClick={() => navigate("/")}>register</button>*/}
                 {/*    <button type="button" onClick={() => navigate("/")}>Login</button>*/}
                 {/*</div>*/}
         </nav>

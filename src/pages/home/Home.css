@@ -86,7 +86,7 @@ header {
 /* --------------- 4.3 Main ------------------- */
 
 main {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     background: var(--green);
 }
 
@@ -173,6 +173,7 @@ footer {
 }
 
 
+
 .logo-footer {
     flex-basis: 60px;
     /*border: #282c34;*/
@@ -218,7 +219,7 @@ ul {
     /*border: dashed;*/
     display: flex;
     flex-direction: row;
-    margin: 25px 55px 25px 55px;
+    margin: 0 55px 25px 55px;
     flex-basis: 100vw;
 
 }

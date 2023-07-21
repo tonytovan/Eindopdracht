@@ -1,0 +1,11 @@
+.input-field {
+    background-color: var(--green);
+    padding: 8px 8px;
+    margin: 2px 2px;
+    border: none;
+    width: 250px;
+    border-radius: 2px;
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-size: 20px;
+    height: 40px;
+}

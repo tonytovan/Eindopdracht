@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
+.go-button {
+    background-color: var(--darkred);
+    width: 250px;
+    padding: 8px 8px;
+    margin: 2px 2px;
+    border: 2px solid var(--darkred);
+    color: black;
+    border-radius: 2px;
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-size: 20px;
+    height: 40px;
+}
+
+.go-button:hover {
+    cursor:pointer;
+}
+
+.go-button:disabled {
+    background-color: darkgray;
+    cursor: not-allowed;
+}

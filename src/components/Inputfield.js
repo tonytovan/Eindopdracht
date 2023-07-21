@@ -1,9 +1,24 @@
 import React from "react";
-import Inputfield from './Inputfield.css';
+import './Inputfield.css'
 
-function Inputfield () {
+
+function Inputfield ({ name, inputId, inputType, inputName, validationRules, errors, register, placeholder, onChange, value}) {
+
     return (
-        <div></div>
+        <>
+        <input
+            name={name}
+            className="input-field"
+            placeholder={placeholder}
+            type={inputType}
+            id={inputId}
+            onChange={onChange}
+            value={value}
+            {...register(inputName, validationRules)}
+
+        />
+    {errors[inputName] && <p>{errors[inputName].message}</p>}
+        </>
     );
 }
 

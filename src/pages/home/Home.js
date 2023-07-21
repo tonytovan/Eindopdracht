@@ -1,20 +1,20 @@
 import React from 'react';
 import './Home.css';
-import lilchefgif from '../../assets/lilchef-GIF.png';
+import LilChef from '../../assets/LilChef.png';
 import {Link} from "react-router-dom";
 import Koksmuts from '../../assets/Koksmuts.png'
 import Fridge from '../../assets/Fridge.png'
-import Pannetje from '../../assets/Pannetje.png'
+import Pan from '../../assets/Pan.png'
 
 function Home() {
     return (
-        <body>
+
         <div className="container">
         <header className="outer-container header">
             <div className="inner-container">
                     <h1>Lil' Chef</h1>
                     <span className="logo-header">
-                    <img src={lilchefgif} alt="logo_lilchef"/>
+                    <img src={LilChef} alt="logo_lilchef"/>
                     </span>
                     <h2>Your kitchen buddy!</h2>
             </div>
@@ -28,10 +28,10 @@ function Home() {
                     <div className="inner-article-main">
                     <p>No inspiration what to cook with the ingredients in your fridge?</p>
                         <p>No Panic, Lil’ Chef to the rescue! You only have to choose the ingredients and Lil’ Chef will do the rest!</p>
-                        <p>Login to start cooking. If you don’t have an account, register <Link to="/"> here.</Link> </p>
+                        <p>Login to start cooking. If you don’t have an account, register <Link to="/register"> here.</Link> </p>
                     </div>
                     <span className="picture-main-hotpan">
-                    <img src={Pannetje} alt="Hotpan"/>
+                    <img src={Pan} alt="Hotpan"/>
                     </span>
             </div>
         </div>
@@ -57,7 +57,7 @@ function Home() {
             </div>
         </footer>
         </div>
-        </body>
+
     );
 }
 
