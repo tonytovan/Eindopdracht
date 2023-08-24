@@ -14,6 +14,9 @@
     justify-content: center;
     width: 100vw;
     height: 200px;
+    background: rgb(255,253,227);
+    background: linear-gradient(180deg, rgba(255,253,227,1) 59%, rgba(207,232,169,1) 90%);
+    flex-shrink: 1;
 
 }
 
@@ -29,17 +32,18 @@
 }
 
 .login-main-outer-container {
-    /*border: 2px solid blue;*/
+    border: 2px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 350px;
+    background-color: var(--green);
 }
 
 .login-main-inner-container {
-    /*border: 2px dashed black;*/
+    border: 2px dashed black;
     display: flex;
     flex-direction: column;
     flex-basis: 200px;

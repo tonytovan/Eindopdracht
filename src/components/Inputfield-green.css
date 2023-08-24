@@ -1,0 +1,17 @@
+.input-field-green {
+    background-color: var(--offwhite);
+    padding: 8px 8px;
+    margin: 2px 2px;
+    border: none;
+    width: 250px;
+    border-radius: 2px;
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-size: 20px;
+    height: 40px;
+}
+
+.errormessage {
+    color: #C21010;
+    text-transform: uppercase;
+    font-weight: bold;
+}

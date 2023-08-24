@@ -4,6 +4,9 @@
     justify-content: center;
     width: 100vw;
     height: 200px;
+    background: rgb(255,253,227);
+    background: linear-gradient(180deg, rgba(255,253,227,1) 59%, rgba(207,232,169,1) 90%);
+    flex-shrink: 1;
 }
 
 .register-header-inner-container {
@@ -25,6 +28,7 @@
     align-items: center;
     width: 100vw;
     height: 350px;
+    background-color: var(--green);
 }
 
 .register-main-inner-container {

@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Aleo', serif;
+    font-family: 'Arial', serif;
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -50,11 +50,6 @@ h2 {
 }
 
 /* --------------- 4.1 Header ------------------------- */
-header {
-    background: rgb(255,253,227);
-    background: linear-gradient(180deg, rgba(255,253,227,1) 59%, rgba(207,232,169,1) 90%);
-    flex-shrink: 1;
-}
 
 .outer-container {
     width: 100%;
@@ -62,6 +57,9 @@ header {
     flex-direction: row;
     justify-content: center;
     /*border: 2px solid blue;*/
+    background: rgb(255,253,227);
+    background: linear-gradient(180deg, rgba(255,253,227,1) 59%, rgba(207,232,169,1) 90%);
+    flex-shrink: 1;
 }
 
 .inner-container {
@@ -87,13 +85,14 @@ header {
 
 main {
     flex: 1 1 auto;
-    background: var(--green);
+
 }
 
 .main-wrapper {
     display: flex;
     flex-direction: row;
     /*border: 2px solid orange;*/
+    background: var(--green);
 }
 
 .main-content {

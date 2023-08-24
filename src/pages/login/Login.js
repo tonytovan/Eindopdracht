@@ -64,6 +64,8 @@ function Login() {
                     </form>
                     <p className="text-login">Don't have an account yet? Register <Link to="/register">here</Link>.</p>
                 </main>
+
+
                 <footer id="footer outer-footer-container">
                     <div className="inner-footer-container">
                         <div className="inner-walking-container">
