@@ -2,7 +2,7 @@ import React from "react";
 import './Inputfield.css'
 
 
-function Inputfield ({ name, inputId, inputType, inputName, validationRules, errors, register, placeholder, onChange, value}) {
+function Inputfield ({ inputId, inputType, placeholder, value, onChange, name, inputName, validationRules, register, errors}) {
 
     return (
         <>
@@ -12,12 +12,13 @@ function Inputfield ({ name, inputId, inputType, inputName, validationRules, err
             placeholder={placeholder}
             type={inputType}
             id={inputId}
-            onChange={onChange}
             value={value}
+            onChange={onChange}
             {...register(inputName, validationRules)}
 
         />
-    {errors[inputName] && <p>{errors[inputName].message}</p>}
+            <div className="errormessage">{errors[inputName] && <p>{errors[inputName].message}</p>}
+            </div>
         </>
     );
 }

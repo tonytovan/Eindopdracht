@@ -13,9 +13,11 @@ function Home() {
         <header className="outer-container header">
             <div className="inner-container">
                     <h1>Lil' Chef</h1>
+                    <Link to="/search">
                     <span className="logo-header">
                     <img src={LilChef} alt="logo_lilchef"/>
                     </span>
+                    </Link>
                     <h2>Your kitchen buddy!!</h2>
             </div>
         </header>
